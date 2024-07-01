@@ -1,5 +1,5 @@
 *{
-
+  
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,7 +10,7 @@
 }
 
 body{
-    overflow-x: hidden;
+   
      background-color: #081b29;
     color: #ededed;
 }
@@ -441,5 +441,9 @@ body{
     }
     .home-content h3{
         font-size: 25px;
+    }
+    .image img{
+        width: 90vw;
+        margin-top: 50px;
     }
 }
