@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Fortfolio</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <header class="header">
+
+        <a href="#" class="logo"> Fardin.</a>
+
+        <nav class="navbar">
+
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+            <i class='bx bx-menu'id="menu" onclick="showOption('show');"></i>
+            </nav>
+    </header>
+<ul class="items">
+    <p id="cancel" onclick="showOption('hide')">&times;</p>
+    <li>Home</li>
+    <li>About</li>
+    <li>Services</li>
+    <li>Portfolio</li>
+    <li>Contact</li>
+</ul>
+    <section class="home">
+
+        <div class="home-content">
+
+            <h1>Hi, I'm Fardin Mansuri</h1>
+            <h3>Frontend Developer</h3>
+            <p>"Hello! I'm Fardin Mansuri, a front-end developer specializing in crafting intuitive user experiences with HTML, CSS, JavaScript, and frameworks like React and Vue.js. </p>
+            <div class="btn-box">
+                <a href="#">Hire Me</a>
+                <a href="#">Let's Talk</a>
+            </div>
+        </div>
+
+        <div class="home-sci">
+
+            <a href="https://www.facebook.com/fardin.mansuri.1291?mibextid=JRoKGi"><i class='bx bxl-facebook' ></i></a>
+            <a href="https://www.instagram.com/mr__fardin_18?igsh=MWQ5bHBkeDQ3OWtobw=="><i class='bx bxl-instagram-alt' ></i></a>
+            <a href="https://www.linkedin.com/in/fardin-mansuri-62a6362b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin' ></i></a>
+        </div>
+        
+        <span class="home-imghover"></span>
+        <div class="image">
+            <img src="my image/myImage.png" alt="">
+        </div>
+    </section>
+    <script>
+        const showbtn = document.querySelector("#menu");
+        const hidebtn = document.querySelector("#cancel");
+        const options = document.querySelector(".items");
+
+        function showOption(mode){
+            if(mode === "show") {
+                options.style.display = "block";
+                options.style.width = "300px";
+            }
+            if(mode === "hide") {
+                options.style.display = "none";
+            }
+        }
+
+     </script>   
+
+    
+</body>
+</html>
