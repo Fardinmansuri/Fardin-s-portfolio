@@ -410,7 +410,9 @@ body{
         margin-top: 50px;
     }
     .home-sci{
-       margin-bottom: 180px;
+       position: fixed;
+       bottom: 20px;
+
     }
     .home-imghover{
         display: none;
@@ -444,6 +446,6 @@ body{
     }
     .image img{
         width: 90vw;
-        margin-top: 50px;
+        margin-top: 7px;
     }
 }
